@@ -1,7 +1,15 @@
 function clearDisplay(){
-    document.getElementById.innerHTML = "";
+    document.getElementById("display-bar").innerHTML = "";
 }
 
-function display(){
+function display(userinput){
+     document.getElementById("display-bar").innerHTML +=  userinput;
+}
+
+
+function calulate(){
+    var answer = eval(document.getElementById("display-bar").innerHTML);
+    document.getElementById("display-bar").innerHTML = answer;
+
     
 }
